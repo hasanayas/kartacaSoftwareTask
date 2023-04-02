@@ -1,0 +1,78 @@
+.container{
+  position: absolute;
+  
+  /* Ortalamak için gerekli  */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  /* İçerisindeki elemanları ortalamak için gerekli */
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+input[type=text],input[type=password]{
+  border: 1px solid #150;
+  width: 250px;
+  height: 34px;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button[type=button]{
+  border: 1px solid #150;
+  text-align: center;
+  height: 34px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 100;
+  background: #150;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+label{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.additional-fields {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.additional-fields.show {
+  max-height: 300px;
+  transition: max-height 0.5s ease-in;
+}
+
+.buttons button:nth-of-type(2) {
+  background-color: #f00;
+}
+
+.buttons button:nth-of-type(2):hover {
+  background-color: #d00;
+}
+
+.register-button{
+  margin-left: 5px;
+}
+
+.secret{
+  margin-top: 5px;
+}
